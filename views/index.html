@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binus Aspire | Course Registration</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/courseRegistration.css">
+</head>
+<body>
+    <div id="background">
+        <!-- HEADER -->
+        <header>
+            <div class="headSection1">
+                <div class="menu">
+                    <img src="/icon/titik.svg" alt="Menu">
+                </div>
+                <div class="vertical-line">
+    
+                </div>
+                <div class="welcome">
+                    <div class="welcomeTop">
+                        <span>WELCOME BACK</span>
+                    </div>
+                    <div class="welcomeBottom">
+                        <span>Jamal Lacky Onidous</span>
+                    </div>
+                </div>
+            </div>
+            <div class="headSection2">
+                <span class="brand1">BINUS</span> <span class="brand2">ASPIRE</span>
+            </div>
+            <div class="headSection3">
+                <div class="bellNotification">
+                    <img src="icon/bell.svg" alt="Notification">
+                </div>
+                <div class="photoProfile">
+                    <img src="img/speedScream-modified.png" width="45px" alt="Profile">
+                </div>
+            </div>
+        </header>
+        <!-- END HEADER -->
+    
+        <!-- TOGGLE MOBILE VIEW -->
+        <button id="menu-toggle">☰</button>
+        
+        <!-- MAIN CONTAINER -->
+        <div class="container">
+            <!-- SIDEBAR -->
+            <aside id="sidebar">
+                <div class="card-points">
+                    <div class="point-item">
+                        <span class="pointTitle">Student Activity Points</span>
+                        <br>
+                        <span class="point">XX/120</span>
+                    </div>
+                    <div class="point-item">
+                        <span class="pointTitle">Community Service</span>
+                        <br>
+                        <span class="point">XX/30</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="icon/regis.svg" alt="Registration"><a href="/"><span> Registration</span></a>
+                </div>  
+                <div class="menu-item">
+                    <img src="icon/dash.svg" alt="Dashboard"><a href="/dashboard"><span> Dashboard</span></a>
+                </div>
+                <div class="menu-item">
+                    <img src="icon/course.svg" alt="Courses"> <a href="/courses"><span> Courses</span></a>
+                </div>
+                <div class="menu-item">
+                    <img src="icon/asses.svg" alt="Assessment"> <a href="/assessment"><span> Assessment</span></a>
+                </div>
+                <div class="menu-item">
+                    <img src="icon/attend.svg" alt="Attendance"> <a href="/attendance"><span> Attendance</span></a>
+                </div>
+                <div class="menu-item">
+                    <img src="icon/jadwal.svg" alt="Schedule"> <a href="/schedule"><span> Schedule</span></a>
+                </div>
+                <div class="menu-item">
+                    <img src="icon/learn.svg" alt="LearnIT"> <a href="/learnIT"><span> LearnIT</span></a>
+                </div>
+                <div class="menu-item">
+                    <img src="icon/info.svg" alt="Information"> <a href="/information"><span> Information</span></a>
+                </div>
+            </aside>
+            <!-- END SIDEBAR -->
+    
+            <!-- MAIN -->
+            <main>
+                <span class="title">Compact Semester Registration</span>
+                <hr>
+                <section class="registration">
+                    <div id="course-list" class="course-list">
+                        <!-- Courses will be appended here -->
+                    </div>
+                    <div class="courseFooter">
+                        <p>Remaining Credit: 9 of 9</p>
+                        <button class="checkout-btn">Checkout</button>
+                    </div>
+                </section>
+            </main>
+            <!-- END MAIN -->
+    
+        </div>
+        <!-- END MAIN CONTAINER -->
+        </div>
+
+
+        <!-- COURSE MODAL -->
+        <!-- Popup Modal Structure -->
+        <div id="courseModal" class="modal">
+            <div class="modal-content">
+
+                <span class="close">&times;</span>
+                <h2 id="modal-course-name"></h2>
+                <hr>
+                <div class="modal-container">
+                    <div class="modal-item">
+                        <h3>Credit</h3>
+                        <div class="courseCreditSmall">
+                            <img src="icon/courseRegist.svg" alt="">
+                            <p id="modal-course-credit"></p>
+                        </div>
+                    </div>
+                    <div class="modal-item">
+                        <h3>Course Code</h3>
+                        <p id="modal-course-code"></p>
+                    </div>
+                    <div class="modal-item">
+                        <h3>Course Status</h3>
+                        <p id="modal-course-status">Taken</p>
+                    </div>
+                    <div class="modal-item">
+                        <h3>Minimum Passing Grade</h3>
+                        <p id="modal-course-passinggrade" style="color: #05FF00;"></p>
+                    </div>
+                    <div class="modal-item">
+                        <h3>Achieved Grade</h3>
+                        <p id="modal-course-achievedGrade" style="color: #ff0000;">E</p>
+                    </div>
+                </div>
+
+            <hr>
+            <div class="modal-sections">
+                <div class="modal-section">
+                <h3>Description</h3>
+                <p>This course comprises the human factors in interactive software, theories, principles and guidance in interface development, interface components, interface styles, disciplines associated with design and evaluation of user interface in order to support the usability. This course gives students the ability to design and evaluate the user interface.</p>
+                </div>
+                <div class="modal-section">
+                <h3>Learning Outcomes</h3>
+                <p>1. (C2) Comprehension: describe<br>
+                2. (C3) Application: use<br>
+                3. (C6) Evaluation: choose</p>
+                </div>
+                <div class="modal-section">
+                <h3>Topic</h3>
+                    <p>
+                        1. Figma<br>
+                        2. Introduction to HTML<br>
+                        3. Introduction to CSS<br>
+                        4. Introduction to Javascript<br>
+                        5. Javascript form<br>
+                        6. Project<br>
+                        7. Interaction Design<br>
+                        8. Understanding and Conceptualizing Interaction<br>
+                        9. Cognitive Aspects<br>
+                        10. Social Interaction<br>
+                        11. Emotional Interaction<br>
+                        12. Interfaces<br>
+                        13. Review I<br>
+                        14. Discovering Requirements<br>
+                        15. Data Analysis, Interpretation, and Presentation<br>
+                        16. Design, Prototyping and Construction<br>
+                        17. Introducing Evaluation<br>
+                        18. Advanced Evaluation<br>
+                        19. Review II
+                    </p>
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <button id="goBackBtn">Go Back</button>
+                <button id="addToCartBtn">Add To Cart</button>
+            </div>
+            </div>
+        </div>
+        <!-- END COURSE MODAL -->
+    
+        <!-- POPUPS -->
+        <div id="popup1" class="popup-overlay">
+            <div class="popup-content">
+                <h2>Welcome to BINUS Aspire</h2>
+                <button id="next-popup1" class="popup-button">Next</button>
+            </div>
+        </div>
+    
+        <div id="popup2" class="popup-overlay">
+            <div class="popup-content">
+                <h2>Would You Like To Analize Your Previous Grades Now?</h2>
+                <button id="next-popup2-maybe" class="popup-button">Maybe Next Time</button>
+                <button id="next-popup2-yes" class="popup-button">Yes</button>
+            </div>
+        </div>
+    
+        <div id="popup3" class="popup-overlay">
+            <div class="popup-content">
+                <h2>Analizing Grade...</h2>
+                <div class="loading-animation"></div>
+            </div>
+        </div>
+    
+        <div id="popup4" class="popup-overlay">
+            <div class="popup-content">
+                <h2>Result</h2>
+                <p>HEHEHE</p>
+                <button id="next-popup4" class="popup-button">Next</button>
+            </div>
+        </div>
+    
+        <div id="popup5" class="popup-overlay">
+            <div class="popup-content">
+                <h2>Would You Like To Input Your Prefered Learning Pathways?</h2>
+                <button id="next-popup5-maybe" class="popup-button">Maybe Next Time</button>
+                <button id="next-popup5-yes" class="popup-button">Yes</button>
+            </div>
+        </div>
+    
+    
+        <div id="popup6" class="popup-overlay">
+            <div class="popup-content">
+                <h2>Which Courses Are You Going To Retake And Most Likely To Focus On?</h2>
+                <button id="next-popup6" class="popup-button">Next</button>
+            </div>
+        </div>
+    
+        <div id="popup7" class="popup-overlay">
+            <div class="popup-content">
+                <h2>What Is Your Preferred Learning Style?</h2>
+                <h2>What is Your Study Habits (Morning or Evening)?</h2>
+                <h2>what is Your Study Duration?</h2>
+                <h2>What is Your Areas of Interest and Strengths?</h2>
+                <h2>What Is Academic Goals for Semester?</h2>
+                <h2>What Is Your Specific Challenges Faced in Previous Semesters?</h2>
+                <button id="next-popup7" class="popup-button">Next</button>
+            </div>
+        </div>
+    
+        <div id="popup8" class="popup-overlay">
+            <div class="popup-content">
+                <h2>Making Your Learning Pathway</h2>
+                <div class="loading-animation"></div>
+            </div>
+        </div>
+    
+        <div id="popup9" class="popup-overlay">
+            <div class="popup-content">
+                <h2>Welcome, to BINUS ASPIRE Jamal Lacky Onidous</h2>
+                <p>This popup will automatically close after 5 second</p>
+            </div>
+        </div>
+        <!-- END POPUPS -->
+    
+    <script src="scripts/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('/api/courses')
+                .then(response => response.json())
+                .then(data => {
+                    const courseList = document.getElementById('course-list');
+                    data.forEach(course => {
+                        const courseCard = document.createElement('div');
+                        courseCard.className = 'course-card';
+                        courseCard.innerHTML = `
+                            <p>${course.code}</p>
+                            <h3>${course.name}</h3>
+                            <div class="courseCredit">
+                                <img src="icon/courseRegist.svg" alt="">
+                                <h2>${course.creditlec}/${course.creditlab} Credit</h2>
+                            </div>
+                            <button class="view-detail-btn" onclick="openModal('${course.code}', '${course.name}', '${course.creditlec}', '${course.creditlab}', '${course.passinggrade}')">View Detail</button>
+                        `;
+                        courseList.appendChild(courseCard);
+                    });
+                })
+                .catch(error => console.error('Error fetching courses:', error));
+        });
+
+        function openModal(code, name, creditlec, creditlab, passinggrade) {
+            document.getElementById('modal-course-name').innerText = name;
+            document.getElementById('modal-course-code').innerText = code;
+            document.getElementById('modal-course-credit').innerText = `${creditlec}/${creditlab} Credit`;
+            document.getElementById('modal-course-passinggrade').innerText = passinggrade;
+            document.getElementById('courseModal').style.display = 'block';
+        }
+
+        document.querySelector('.close').addEventListener('click', () => {
+            document.getElementById('courseModal').style.display = 'none';
+        });
+
+        window.onclick = function(event) {
+            if (event.target === document.getElementById('courseModal')) {
+                document.getElementById('courseModal').style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+# Dependency directories
+/node_modules
+
+# Environment variables file
+.env
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Editor directories and files
+.vscode/
+.idea/
+
+# Dependency
+package.json
+
+# Dependency lock files
+package-lock.json
+yarn.lock
+
+# Ignore production build output
+/build
+/dist
+
+# Ignore database backup files
+*.backup
+
+# Ignore OS generated files
+Thumbs.db
+
+# Ignore system files from public
+/public/system/*
+
+# Ignore npm debug log
+npm-debug.log
+
+# Ignore node.js repl history file
+.node_repl_history
+
+# Ignore Server-side cache
+*.cache
+
+# Ignore Heroku deployment files
+deploy.env
+
+# Additional items specific to your project structure
+# Add any specific files or directories here as needed
