@@ -4,9 +4,6 @@
 # Environment variables file
 .env
 
-# macOS
-.DS_Store
-
 # Logs
 *.log
 
@@ -42,9 +39,3 @@ npm-debug.log
 
 # Ignore Server-side cache
 *.cache
-
-# Ignore Heroku deployment files
-deploy.env
-
-# Additional items specific to your project structure
-# Add any specific files or directories here as needed
