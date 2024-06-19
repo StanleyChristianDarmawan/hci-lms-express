@@ -269,6 +269,34 @@ main .title {
     color: #000000;
 }
 
+.assessment-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.assessment-info .none {
+    color: gray;
+    font-family: 'Inter', sans-serif;
+}
+.assessment-info .done {
+    color: green;
+    font-family: 'Inter', sans-serif;
+}
+.assessment-info .left {
+    color: red;
+    font-family: 'Inter', sans-serif;
+}
+.view-btn {
+    background-color: #ff9800;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
 /* END MAIN */
 
 /* RESPONSIVE */

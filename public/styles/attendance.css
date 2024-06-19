@@ -245,6 +245,20 @@ main .title {
     color: #FF0000;
 }
 
+.assessment-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.assessment-info .done {
+    color: green;
+    font-family: 'Inter', sans-serif;
+}
+.assessment-info .left {
+    color: red;
+    font-family: 'Inter', sans-serif;
+}
 
 
 /* END MAIN */
