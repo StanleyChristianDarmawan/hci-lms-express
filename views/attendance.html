@@ -122,13 +122,16 @@
                     data.forEach(course => {
                         const courseCard = document.createElement('div');
                         courseCard.className = 'course-card';
-
-                        const statuses = [
-                            { text: '26 Of 26 Sessions Attended', class: 'done' },
-                            { text: '13 Of 26 Sessions Attended', class: 'left' }
-                        ];
-                        const randomStatus = statuses[Math.floor(Math.random() * statuses.length)];
-
+        
+                        let attendanceStatus = `${course.attendance} Of ${course.session} Sessions Attended`;
+                        let attendanceClass = '';
+        
+                        if (course.attendance === course.session) {
+                            attendanceClass = 'done';
+                        } else {
+                            attendanceClass = 'left';
+                        }
+        
                         courseCard.innerHTML = `
                             <p>${course.code}</p>
                             <h3>${course.name}</h3>
@@ -137,14 +140,14 @@
                             </div>
                             <hr>
                             <div class="assessment-info">
-                                <span class="${randomStatus.class}">${randomStatus.text}</span>
+                                <span class="${attendanceClass}">${attendanceStatus}</span>
                             </div>
                         `;
                         courseList.appendChild(courseCard);
                     });
                 })
                 .catch(error => console.error('Error fetching courses:', error));
-        });
+        });        
     </script>
     <script src="scripts/script.js"></script>
 </body>
