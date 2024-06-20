@@ -367,88 +367,111 @@ main {
     width: 300px;
     height: 380px;
 }
-
-
-
-
 /* END MAIN */
 
-/* RESPONSIVE */
-
-/* kata jason responsive belakangan */
-
-/* @media (max-width: 768px) {
-    .headSection1, .bellNotification  {
-        display: none;
-    }
-
-    .headSection2 {
-        text-align: left;
-    }
-
-    .headSection2 .brand1, .headSection2 .brand2 {
-        display: block;
-    }
-
-    aside {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        z-index: 1000;
-        width: 250px;
-        transform: translateX(-100%);
-    }
-
-    .sidebar-hidden {
-        transform: translateX(0);
-    }
-
-    #menu-toggle {
-        display: block;
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        z-index: 1001;
-        background-color: #00A1E9;
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        border-radius: 4px;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    main {
-        padding-top: 60px;
-    }
-
+@media (max-width: 1100px) {
     .main-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+      grid-template-columns: 1fr;
     }
-
-    .upcoming-class, .todolist, .schedule {
-        grid-column: 1;
-        grid-row: auto;
+  
+    .first-section,
+    .second-section,
+    .third-section {
+      grid-area: auto;
     }
+  
 
-    .schedule {
+    .information-content,
+    .sat-content,
+    .comserv-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .poster {
+        width: 120px;
         height: auto;
     }
-} */
-
-/* HIDE MENU */
-/* #menu-toggle {
-    display: none;
-} */
-
-/* For small screens */
-/* @media screen and (max-width: 576px) {
-    header {
-        padding: 10px;
+    .information-poster,
+    .comserv-poster {
+      width: 100px;
+      height: auto;
     }
-} */
+  }
+  
+  .card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    border: none;
+  }
+  
+  .first-title,
+  .second-title,
+  .third-title {
+    font-weight: 600;
+    letter-spacing: -0.07em;
+    color: #444343;
+    margin-bottom: 7px;
+  }
+  
+  .first-title {
+    font-size: calc(1vw + 2rem);
+  }
+  
+  .second-title,
+  .third-title {
+    font-size: 1.5rem;
+  }
+  
+  .information-bold {
+    font-weight: 600;
+    font-size: 0.5rem;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .information-event > ul {
+    font-weight: 600;
+    font-size: 0.5rem;
+    color: #888686;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .information-event > ul > li {
+    margin-left: 20px;
+  }
+
+  .sat-content > ol > li{
+    font-size: 8px;
+    color: #000000;
+    margin-left: 30px;
+  }
+  .sat-date{
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  .information-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+  
+  .arrow {
+    width: 2rem;
+    height: 3rem;
+    align-self: center;
+  }
+
+  .register-btn {
+    font-weight: 800;
+    font-size: 0.5rem;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    width: 100px;
+    height: 30px;
+  }

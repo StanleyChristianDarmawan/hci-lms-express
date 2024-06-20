@@ -3,114 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Binus Aspire | Attendance</title>
+    <title>BINUS Aspire</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/courseRegistration.css">
+    <link rel="stylesheet" href="styles/schedule.css">
+    <link rel="stylesheet"
+        href=
+"https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="headSection1">
-            <div class="menu">
-                <img src="/icon/titik.svg" alt="Menu">
-            </div>
-            <div class="vertical-line">
-
-            </div>
-            <div class="welcome">
-                <div class="welcomeTop">
-                    <span>WELCOME BACK</span>
+    <div id="background">
+            <!-- HEADER -->
+            <header>
+                <div class="headSection1">
+                    <div class="menu">
+                        <img src="/icon/titik.svg" alt="Menu">
+                    </div>
+                    <div class="vertical-line">
+        
+                    </div>
+                    <div class="welcome">
+                        <div class="welcomeTop">
+                            <span>WELCOME BACK</span>
+                        </div>
+                        <div class="welcomeBottom">
+                            <span>Jamal Lacky Onidous</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="welcomeBottom">
-                    <span>Jamal Lacky Onidous</span>
+                <div class="headSection2">
+                    <span class="brand1">BINUS</span> <span class="brand2">ASPIRE</span>
                 </div>
-            </div>
-        </div>
-        <div class="headSection2">
-            <span class="brand1">BINUS</span> <span class="brand2">ASPIRE</span>
-        </div>
-        <div class="headSection3">
-            <div class="bellNotification">
-                <img src="icon/bell.svg" alt="Notification">
-            </div>
-            <div class="photoProfile">
-                <img src="img/speedScream-modified.png" width="45px" alt="Profile">
-            </div>
-        </div>
-    </header>
-    <!-- END HEADER -->
-
-    <!-- TOGGLE MOBILE VIEW -->
-    <button id="menu-toggle">☰</button>
-    
-    <!-- MAIN CONTAINER -->
-    <div class="container">
-        <!-- SIDEBAR -->
-        <aside id="sidebar">
-            <div class="card-points">
-                <div class="point-item">
-                    <span class="pointTitle">Student Activity Points</span>
-                    <br>
-                    <span class="point">XX/120</span>
+                <div class="headSection3">
+                    <div class="bellNotification">
+                        <img src="icon/bell.svg" alt="Notification">
+                    </div>
+                    <div class="photoProfile">
+                        <img src="img/speedScream-modified.png" width="45px" alt="Profile">
+                    </div>
                 </div>
-                <div class="point-item">
-                    <span class="pointTitle">Community Service</span>
-                    <br>
-                    <span class="point">XX/30</span>
-                </div>
-            </div>
-            <a href="/">
-                <div class="menu-item">
-                    <img src="icon/regis.svg" alt="Registration"><span> Registration</span>
-                </div>
-            </a>
-            <a href="/dashboard">
-                <div class="menu-item">
-                    <img src="icon/dash.svg" alt="Dashboard"><span> Dashboard</span>
-                </div>
-            </a>
-            <a href="/courses">
-                <div class="menu-item">
-                    <img src="icon/course.svg" alt="Courses"><span> Courses</span>
-                </div>
-            </a>
-            <a href="/assessment">
-                <div class="menu-item">
-                    <img src="icon/asses.svg" alt="Assessment"><span> Assessment</span>
-                </div>
-            </a>
-            <a href="/attendance">
-                <div class="menu-item">
-                    <img src="icon/attend.svg" alt="Attendance"><span> Attendance</span>
-                </div>
-            </a>
-            <a href="/schedule">
-                <div class="menu-item menu-active">
-                    <img src="icon/jadwal.svg" alt="Schedule"><span> Schedule</span>
-                </div>
-            </a>
-            <a href="/learnIT">
-                <div class="menu-item">
-                    <img src="icon/learn.svg" alt="LearnIT"><span> LearnIT</span>
-                </div>
-            </a>
-            <a href="/information">
-                <div class="menu-item">
-                    <img src="icon/info.svg" alt="Information"><span> Information</span>
-                </div>
-            </a>
-        </aside>
-        <!-- END SIDEBAR -->
+            </header>
+            <!-- END HEADER -->
+        
+            <!-- TOGGLE MOBILE VIEW -->
+            <button id="menu-toggle">☰</button>
+            
+            <!-- MAIN CONTAINER -->
+            <div class="container">
+                <!-- SIDEBAR -->
+                <aside id="sidebar">
+                    <div class="card-points">
+                        <div class="point-item">
+                            <span class="pointTitle">Student Activity Points</span>
+                            <br>
+                            <span class="point">XX/120</span>
+                        </div>
+                        <div class="point-item">
+                            <span class="pointTitle">Community Service</span>
+                            <br>
+                            <span class="point">XX/30</span>
+                        </div>
+                    </div>
+                    <a href="/">
+                        <div class="menu-item">
+                            <img src="icon/regis.svg" alt="Registration"><span> Registration</span>
+                        </div>
+                    </a>
+                    <a href="/dashboard">
+                        <div class="menu-item">
+                            <img src="icon/dash.svg" alt="Dashboard"><span> Dashboard</span>
+                        </div>
+                    </a>
+                    <a href="/courses">
+                        <div class="menu-item">
+                            <img src="icon/course.svg" alt="Courses"><span> Courses</span>
+                        </div>
+                    </a>
+                    <a href="/assessment">
+                        <div class="menu-item">
+                            <img src="icon/asses.svg" alt="Assessment"><span> Assessment</span>
+                        </div>
+                    </a>
+                    <a href="/attendance">
+                        <div class="menu-item">
+                            <img src="icon/attend.svg" alt="Attendance"><span> Attendance</span>
+                        </div>
+                    </a>
+                    <a href="/schedule">
+                        <div class="menu-item menu-active">
+                            <img src="icon/jadwal.svg" alt="Schedule"><span> Schedule</span>
+                        </div>
+                    </a>
+                    <a href="/learnIT">
+                        <div class="menu-item">
+                            <img src="icon/learn.svg" alt="LearnIT"><span> LearnIT</span>
+                        </div>
+                    </a>
+                    <a href="/information">
+                        <div class="menu-item">
+                            <img src="icon/info.svg" alt="Information"><span> Information</span>
+                        </div>
+                    </a>
+                </aside>
+                <!-- END SIDEBAR -->
 
         <!-- MAIN -->
         <main>
+            <!-- SCHEDULE (LEFT) -->
             <span class="title">Schedule</span>
             <hr>
-
+            <div class="schedule-container">
+                <div class="schedule" id="left">
+                    <h4>Wednesday, 26th of June 2024</h4>
+                    <div class="matkuls">
+                        <hr>
+                        <div class="exam-item">
+                            <div class="exam-details">
+                                <h5>Calculus</h5>
+                                <h6>THEORY: FINAL EXAM</h6>
+                                <p>13:00 - 14:40 GMT+7</p>
+                            </div>
+                            <div class="category-button">
+                                <span>Exam</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="exam-item">
+                            <div class="exam-details">
+                                <h5>Human Computer Interface</h5>
+                                <h6>THEORY: FINAL EXAM</h6>
+                                <p>07:00 - 23:00 GMT+7</p>
+                            </div>
+                            <div class="category-button">
+                                <span>Exam</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="exam-item">
+                            <div class="exam-details">
+                                <h5>Human Computer Interface</h5>
+                                <h6>Session 50 - <span>VIRTUAL CLASS</span></h6>
+                                <p>07:00 - 23:00 GMT+7</p>
+                            </div>
+                            <div class="category-button">
+                                <span>Class</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="exam-item">
+                            <div class="exam-details">
+                                <h5>Scientific Computing</h5>
+                                <h6>Session 5 - <span>VIRTUAL CLASS</span></h6>
+                                <p>07:00 - 13:00 GMT+7</p>
+                            </div>
+                            <div class="category-button">
+                                <span>Class</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="exam-item">
+                            <div class="exam-details">
+                                <h5>Character Building</h5>
+                                <h6>THEORY: ASSURANCE OF LEARNING</h6>
+                                <p>Deadline: 22/06/2024 22:00 GMT+7</p>
+                            </div>
+                            <div class="category-button">
+                                <span>Assessment</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="exam-item">
+                            <div class="exam-details">
+                                <h5>Human Computer Interaction</h5>
+                                <h6>THEORY: ASSURANCE OF LEARNING</h6>
+                                <p>Deadline: 22/06/2024 22:00 GMT+7</p>
+                            </div>
+                            <div class="category-button">
+                                <span>Assessment</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="exam-item">
+                            <div class="exam-details">
+                                <h5>Character Building</h5>
+                                <h6>THEORY: ASSIGNMENT</h6>
+                                <p>Deadline: 22/06/2024 22:00 GMT+7</p>
+                            </div>
+                            <div class="category-button">
+                                <span>Assessment</span>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <!-- END SCHEDULE (LEFT)-->
+        
+                <!-- SCHEDULE CALENDAR -->
+                <div class="calendar-container" id="right">
+                    <header class="calendar-header">
+                        <p class="calendar-current-date"></p>
+                        <div class="calendar-navigation">
+                            <span id="calendar-prev" class="material-symbols-rounded">chevron_left</span>
+                            <span id="calendar-next" class="material-symbols-rounded">chevron_right</span>
+                        </div>
+                    </header>
+        
+                    <div class="calendar-body">
+                        <ul class="calendar-weekdays">
+                            <li>Sun</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                        </ul>
+                        <ul class="calendar-dates"></ul>
+                    </div>
+                </div>
+                <div class="calendar" id="calendar"></div>
+                <!-- END SCHEDULE CALENDAR -->
+            </div>
         </main>
+        
         <!-- END MAIN -->
+
     </div>
-    
-    <script src="scripts/script.js"></script>
+    <!-- END MAIN CONTAINER -->
+</div>
+<script src="../scripts/calendar.js"></script>
+<script src="../scripts/script.js"></script>
 </body>
 </html>
