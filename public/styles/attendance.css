@@ -260,6 +260,22 @@ main .title {
     font-family: 'Inter', sans-serif;
 }
 
+.done{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #14FF00;
+}
+
+.left{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FF0000;
+}
+
 
 /* END MAIN */
 
