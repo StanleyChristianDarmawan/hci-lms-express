@@ -12,7 +12,7 @@
 .idea/
 
 # Dependency
-package.json
+# package.json
 
 # Dependency lock files
 package-lock.json
