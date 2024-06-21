@@ -6,13 +6,17 @@ const { Pool } = require('pg');
 dotenv.config();
 const app = express();
 
+// const pool = new Pool({
+//   host: process.env.DB_HOST,
+//   user: process.env.DB_USER,
+//   password: process.env.DB_PASS,
+//   database: process.env.DB_NAME,
+//   port: process.env.DB_PORT,
+// });
+
 const pool = new Pool({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASS,
-  database: process.env.DB_NAME,
-  port: process.env.DB_PORT,
-});
+  connectionString: process.env.POSTGRES_URL,
+})
 
 app.use(express.static(path.join(__dirname, 'public')));
 
