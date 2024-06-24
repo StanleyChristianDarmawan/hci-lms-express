@@ -587,7 +587,7 @@ td{
     .main-grid {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        height: auto;
+        /* height: auto; */
     }
 
     .firstSection {
