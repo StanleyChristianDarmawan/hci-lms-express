@@ -1,7 +1,3 @@
-function zoom() {
-    document.body.style.zoom = "75%" 
-}
-
 document.getElementById('menu-toggle').addEventListener('click', function() {
     document.getElementById('sidebar').classList.toggle('sidebar-hidden');
 });
