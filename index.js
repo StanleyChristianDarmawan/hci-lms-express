@@ -68,6 +68,12 @@ app.get('/information', (req, res) => {
 app.get('/learnIT', (req, res) => {
   res.sendFile(path.join(__dirname, 'views/learnIT.html'));
 });
+app.get('/learnIT2', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views/learnIT2.html'));
+});
+app.get('/learnIT3', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views/learnIT3.html'));
+});
 app.get('/schedule', (req, res) => {
   res.sendFile(path.join(__dirname, 'views/schedule.html'));
 });

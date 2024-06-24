@@ -22,37 +22,6 @@ header {
     border-bottom: 5px solid #F29116;
 }
 
-.headSection1 {
-    display: flex;
-    align-items: center;
-}
-.welcomeTop {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    color: #444343;
-}
-.welcomeBottom {
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    color: #444343;
-}
-
-.headSection2 {
-    flex-grow: 1;
-    text-align: center;
-
-    font-family: "Inter", sans-serif;
-    font-weight: 900;
-    font-size: 40px;
-}
-
-.headSection3 {
-    display: flex;
-    align-items: center;
-}
-
 .vertical-line {
     border-left: 1px solid #000;
     height: 40px;
@@ -371,7 +340,6 @@ header .calendar-current-date {
     background: #e4e1e1;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .schedule-container {
         flex-direction: column;

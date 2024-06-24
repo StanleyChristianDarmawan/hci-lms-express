@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BINUS Aspire</title>
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/todolistPopup.css">
+    <link rel="stylesheet" href="/styles/attendancePopup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- HEADER -->
@@ -133,7 +138,7 @@
                             <img src="/icon/time.svg" alt="Schedule"><span>07.00 - 23.00 GMT+7</span>
                         </div>
                         <div class="absentBtn">
-                            <button class="absent">Take Attendance</button>
+                            <button id="absent" class="absent">Take Attendance</button>
                         </div>
                     </div>
                 </div>
@@ -266,17 +271,124 @@
                             </div>
                         </div>
                         <div class="viewBtnContainer">
-                            <button class="viewBtn">View All</button>
+                            <button id="viewAllBtn" class="viewBtn">View All</button>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
         <!-- END MAIN -->
-
-    <!-- END MAIN CONTAINER -->
+             <!-- END MAIN CONTAINER -->
     </div>
-    
-<script src="../scripts/script.js"></script>
+
+
+        <!-- POP UP -->
+        <div id="popupTodolist" class="popupTodolist">
+            <div class="popupContent">
+                <span class="title">To Do List</span>
+                <hr>
+                <div class="popup-container">
+                    <div class="popup-section">
+                        <span class="popup-bold">AOL - Human Computer Interaction</span>
+                        <span class="popup-red">Deadline: 22/06/2024 22.00 GMT +7</span>
+                        <span class="popup-light">Human Computer Interaction</span>
+                    </div>
+                    <div class="popup-section">
+                        <span class="popup-bold">Assignment - Human Computer Interaction</span>
+                        <span class="popup-red">Deadline: 22/06/2024 22.00 GMT +7</span>
+                        <span class="popup-light">Human Computer Interaction</span>
+                    </div>
+                    <div class="popup-section">
+                        <span class="popup-bold">Virtual Class - Human Computer Interaction </span>
+                        <span class="popup-red">Deadline: 22/06/2024 22.00 GMT +7</span>
+                        <span class="popup-light">Human Computer Interaction</span>
+                    </div>
+                    <div class="popup-section">
+                        <span class="popup-bold">Article - Human Computer Interaction</span>
+                        <span class="popup-red">Deadline: 22/06/2024 22.00 GMT +7</span>
+                        <span class="popup-light">Human Computer Interaction</span>
+                    </div>
+                    <div class="popup-section">
+                        <span class="popup-bold">Quiz - Human Computer Interaction</span>
+                        <span class="popup-red">Deadline: 22/06/2024 22.00 GMT +7</span>
+                        <span class="popup-light">Human Computer Interaction</span>
+                    </div>
+                    <div class="popup-section">
+                        <span class="popup-bold">Assignment - Human Computer Interaction</span>
+                        <span class="popup-red">Deadline: 22/06/2024 22.00 GMT +7</span>
+                        <span class="popup-light">Human Computer Interaction</span>
+                    </div>
+                    <button id="closePopupBtn" class="popup-btn">Go Back</button>
+                </div>
+            </div>
+        </div>
+        <!-- END POP UP -->
+
+        <!-- ATTENDANCE POPUP -->
+        <div id="popupAttendance" class="popup-attendance">
+            <div class="popupContentAttendance">
+                <span class="title">Attendance</span>
+                <hr>
+                <div class="popupContainerAttendance">
+                    <div class="popup-course">
+                        <span class="popup-bold">Human Computer Interaction</span>
+                        <br>
+                        <span class="popup-light">Online - Zoom Meeting</span>
+                    </div>
+                    <div class="popup-detail">
+                        <div class="popup-detail-item">
+                            <span class="popup-bold">Date</span>
+                            <div class="popup-icon">
+                                <img src="icon/location.svg" alt=""><span class="popup-light">12 Juni 2024</span>
+                            </div>
+                        </div>
+                        <div class="popup-detail-item">
+                            <span class="popup-bold">Time</span>
+                            <div class="popup-icon">
+                                <img src="icon/time.svg" alt=""> <span class="popup-light">07.00 - 23.00 GMT+7</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-status">
+                        <img src="img/checklist.png" alt="">
+                        <span class="popup-bold">Attendance Successful!</span>
+                        <br>
+                        <span class="popup-light">Click Anywhere To Continue</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END ATTENDANCE POPUP -->
+
+    <script>
+        document.getElementById('viewAllBtn').addEventListener('click', function() {
+            document.getElementById('popupTodolist').style.display = 'block';
+        });
+        
+        document.getElementById('closePopupBtn').addEventListener('click', function() {
+            document.getElementById('popupTodolist').style.display = 'none';
+        });
+        
+        window.addEventListener('click', function(event) {
+            var popup = document.getElementById('popupTodolist');
+            if (event.target === popup) {
+                popup.style.display = 'none';
+            }
+        });
+        
+        document.getElementById('absent').addEventListener('click', function() {
+            document.getElementById('popupAttendance').style.display = 'block';
+            document.getElementById('absent').style.backgroundColor = '#47D723';
+            document.getElementById('absent').innerText = 'Attendance Successful';
+        });
+
+        window.addEventListener('click', function(event) {
+            var popup = document.getElementById('popupAttendance');
+            if (event.target === popup) {
+                popup.style.display = 'none';
+            }
+        });
+    </script>    
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
