@@ -20,7 +20,6 @@ main .title {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 30px;
-    height: calc(100vh - 100px);
     margin-left: 50px;
     margin-right: 50px;
 }

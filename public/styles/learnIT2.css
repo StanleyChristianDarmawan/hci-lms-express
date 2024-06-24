@@ -19,7 +19,6 @@ main .title {
     grid-template-columns: 1.5fr 0.5fr;
     grid-template-rows: 1fr;
     gap: 30px;
-    height: calc(100vh - 100px);
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 20px;
