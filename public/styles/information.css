@@ -10,8 +10,6 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 50px;
-    height: calc(100vh - 100px);
     margin-top: 0;
     margin-left: 50px;
     margin-right: 50px;
