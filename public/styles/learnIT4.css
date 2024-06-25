@@ -20,7 +20,6 @@ main .title {
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr;
     gap: 30px;
-    height: calc(100vh - 100px);
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -32,7 +31,7 @@ main .title {
 }
 
 .semester{
-    width: 40%;
+    width: 50%;
     height: 38px;
     background: #FFFFFF;
     border: 2px solid #0097DA;
@@ -43,7 +42,7 @@ main .title {
     gap: 40px;
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 24px;
     color: #000000;
     align-self: flex-start;
@@ -87,7 +86,7 @@ main .title {
     padding: 15px;
 }
 
-h2{
+.subject-menu > h2{
     width: 100%;
     align-self: start;
     justify-self: flex-start;
@@ -225,20 +224,22 @@ h2{
     margin-left: 10px;
 }
 
-.bold{
+.boldLearnIT4{
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
     color: #000000;
+    font-family: 'Inter', sans-serif;
 }
 
-.light{
+.lightLearnIT4{
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
     color: #7A7777;
+    font-family: 'Inter', sans-serif;
 }
 
 .comment-container{
@@ -284,3 +285,63 @@ button{
 }
 /* END MAIN */
 
+/* Responsive adjustments */
+@media (max-width: 1140px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .subject-item{
+        width: 50%;
+        height: 30px;
+        font-size: 15px;
+        padding: 5px;
+        margin-bottom: 5px;
+        margin-top: 2px;
+    }
+
+    .subject-container {
+        padding: 0px;
+    }
+
+    .semester{
+        width: 50%;
+        height: 30px;
+        font-size: 15px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+    
+    .content-forum > img{
+        /* width: 50%; */
+        height: 70%;
+    }    
+
+    .subject-menu {
+        max-width: 100%; /* Adjust subject menu width for smaller screens */
+    }
+
+    .new-btn,
+    .home-btn,
+    .post-btn {
+        width: 90px;
+    }
+
+    .card,
+    .subject-menu {
+        margin-left: 0; /* Adjust margins for smaller screens */
+    }
+
+    .comment-container,
+    .course-forum,
+    .content-forum {
+        margin-left: 0; /* Adjust margins for smaller screens */
+    }
+}
