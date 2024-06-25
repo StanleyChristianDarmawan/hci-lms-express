@@ -29,22 +29,6 @@ main .title {
     gap: 20px;
 }
 
-.search-bar input{
-    width: 100%;
-    height: 55px;
-    background: #FFFFFF;
-    border-radius: 35px;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 24px;
-    text-transform: capitalize;
-    color: #959595;
-    border: 0;
-    text-align: start;
-    padding: 0px 15px;
-}
-
 .subject-menu{
     width: 100%;
     height: 100%;
@@ -56,14 +40,13 @@ main .title {
 }
 
 .subject-container{
-    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #FFFFFF;
     border-radius: 13px;
-    padding: 15px;
+    padding: 20px;
 }
 
 h2{
@@ -95,6 +78,8 @@ h2{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 hr{
@@ -246,10 +231,11 @@ hr{
 }
 
 .forum-container{
-    border-top: 3px solid #ababab;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding-bottom: 70px;
 }
 
 .profile{
@@ -262,6 +248,64 @@ hr{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin: 0px 90px;
+    margin: 0px 40px;
 }
 /* END MAIN */
+
+@media (max-width: 1301px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    .main-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .section1, .section2 {
+        margin: 0;
+    }
+
+    .forum > img {
+        width: 50%;
+    }
+
+    .subject-item{
+        width: 50%;
+        height: 30px;
+        font-size: 15px;
+        padding: 5px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    .subject-container {
+        padding: 5px;
+    }
+    .subject-menu {
+        max-width: 100%;
+    }
+    .card,
+    .subject-menu {
+        margin-left: 0;
+    }
+
+    .forum {
+        margin: 0 20px;
+    }
+    .forum-container{
+        padding: 20px;
+    }
+
+    .profile {
+        margin-left: 20px;
+    }
+}
