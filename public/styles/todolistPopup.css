@@ -11,9 +11,9 @@
 .popupContent {
     background-color: #fefefe;
     margin: 15px auto;
-    padding: 20px;
+    padding: 15px;
     border: 1px solid #888;
-    width: 90%;
+    width: 70%;
     max-width: 500px;
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -34,7 +34,7 @@
     margin: 20px;
 }
 
-.title {
+.titleToDo {
     font-style: normal;
     font-weight: 600;
     font-size: 35px;
@@ -42,7 +42,7 @@
     color: #000000;
 }
 
-.popup-bold {
+.popup-bold-todo {
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -50,7 +50,7 @@
     color: #000000;
 }
 
-.popup-light {
+.popup-light-todo {
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -58,7 +58,7 @@
     color: #6E6E6E;
 }
 
-.popup-red {
+.popup-red-todo {
     font-style: normal;
     font-weight: 700;
     font-size: 13px;
@@ -88,22 +88,23 @@ hr {
 
 @media (max-width: 600px) {
     .popupContent {
-        width: 90%;
-        margin: 30% auto;
+        width: 70%;
+        margin: 10px auto;
+        padding: 10px;
     }
 
-    .title {
-        font-size: 28px;
+    .titleToDo {
+        font-size: 20px;
         line-height: 34px;
     }
 
-    .popup-bold {
-        font-size: 18px;
+    .popup-bold-todo {
+        font-size: 12px;
         line-height: 22px;
     }
 
-    .popup-light, .popup-red {
-        font-size: 12px;
+    .popup-light-todo, .popup-red-todo {
+        font-size: 10px;
         line-height: 14px;
     }
 

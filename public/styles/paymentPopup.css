@@ -1,0 +1,126 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.popup {
+    width: 80%;
+    max-width: 1250px;
+    height: 80%;
+    max-height: 750px;
+    background: #FFFFFF;
+    padding: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.popup.active {
+    display: flex;
+}
+
+.popup1-content, .popup3-content {
+    width: 70%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hitam {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 5vw;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.oren {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4vw;
+    line-height: 5vw;
+    text-align: center;
+    text-transform: capitalize;
+    color: #F29723;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.no-btn, .yes-btn, .payment-btn, .goback-btn, .continue-btn {
+    width: 15vw;
+    height: 5vw;
+    border-radius: 2vw;
+    font-size: 2vw;
+    text-transform: capitalize;
+}
+
+.no-btn, .goback-btn {
+    border: 3px solid #00A1E9;
+    color: #000000;
+}
+
+.yes-btn, .continue-btn {
+    background: #F29723;
+    color: #FFFFFF;
+    border: none;
+}
+
+.payment-btn {
+    background: #FFFFFF;
+    border: 1px solid #7A7B7B;
+    color: #000000;
+}
+
+.popup2-content {
+    width: 90%;
+    text-align: center;
+}
+
+.popup4-content > button{
+    width: 200px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #7A7B7B;
+    border-radius: 28px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.popup2-content > .hitam, .popup2-content > .hitam .oren {
+    font-weight: 600;
+    font-size: 6vw;
+    line-height: 7vw;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.popup4-content, .popup5-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+.qr {
+    width: 20%;
+    max-width: 400px;
+    height: auto;
+}

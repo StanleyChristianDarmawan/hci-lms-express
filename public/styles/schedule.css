@@ -12,118 +12,6 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-/* HEADER */
-header {
-    background-color: #f2f2f2;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 5px solid #F29116;
-}
-
-.vertical-line {
-    border-left: 1px solid #000;
-    height: 40px;
-    margin: 0 10px;
-}
-
-.brand1 {
-    color: #0097DA;
-}
-.brand2 {
-    color: #F29621;
-}
-
-.bellNotification {
-    margin: 0 30px;
-}
-/* END HEADAER */
-
-/* MAIN CONTAINER */
-.container {
-    display: flex;
-}
-/* END MAIN CONTAINER */
-
-/* SIDEBAR */
-aside {
-    background-color: #00A1E9;
-    color: white;
-    padding: 20px;
-    width: 300px;
-    /* height: 100vh; */
-    box-sizing: border-box;
-    transition: transform 0.3s ease;
-    margin-top: -5px;
-}
-
-.sidebar-hidden {
-    transform: translateX(-100%);
-}
-
-.card-points {
-    box-shadow: 7px 8px 4px rgba(0, 0, 0, 0.25);
-
-    background-color: #015581;
-    padding: 25px 30px;
-    border-radius: 22px;
-    margin-bottom: 20px;
-}
-
-.point-item {
-    margin-bottom: 10px;
-}
-
-.menu-item {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    color: #FFFFFF;
-    gap: 10px;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 20px;
-}
-
-.menu-schedule{
-    background-color: #015581;
-    border-radius: 50px 0px 0px 50px;
-}
-.menu-item a {
-    margin-left: 10px;
-    color: white;
-}
-.pointTitle {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    color: #FFFFFF;
-}
-.point {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    color: #FFFFFF;
-}
-
-.menu-item img {
-    margin-right: 10px;
-}
-
-.menu-item:hover {
-    background-color: #015581;
-    border-radius: 50px 0px 0px 50px;
-    cursor: pointer;
-}
-
-.menu-item:active {
-    background-color: #015581;
-}
-/* END SIDEBAR */
-
 main {
     flex: 1;
     padding: 20px;
@@ -333,7 +221,7 @@ header .calendar-current-date {
 }
 
 .calendar-dates li.active::before {
-    background: #6332c5;
+    background: #00A1E9;
 }
 
 .calendar-dates li:not(.active):hover::before {

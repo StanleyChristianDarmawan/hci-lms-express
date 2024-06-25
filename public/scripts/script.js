@@ -89,6 +89,3 @@ window.onclick = function(event) {
 }
 
 document.getElementById("goBackBtn").addEventListener("click", closeModal);
-document.getElementById("addToCartBtn").addEventListener("click", function() {
-  alert("HEHE udah ketambah");
-});

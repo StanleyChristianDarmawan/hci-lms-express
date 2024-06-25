@@ -74,6 +74,9 @@ app.get('/learnIT2', (req, res) => {
 app.get('/learnIT3', (req, res) => {
   res.sendFile(path.join(__dirname, 'views/learnIT3.html'));
 });
+app.get('/learnIT4', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views/learnIT4.html'));
+});
 app.get('/schedule', (req, res) => {
   res.sendFile(path.join(__dirname, 'views/schedule.html'));
 });
