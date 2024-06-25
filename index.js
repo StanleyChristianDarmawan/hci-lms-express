@@ -50,6 +50,9 @@ app.get('/api/courses', async (req, res) => {
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'views/index.html'));
 });
+app.get('/profile', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views/profile.html'));
+});
 app.get('/dashboard', (req, res) => {
   res.sendFile(path.join(__dirname, 'views/dashboard.html'));
 });
