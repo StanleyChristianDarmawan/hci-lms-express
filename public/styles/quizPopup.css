@@ -27,9 +27,9 @@ body{
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-
+    /* width: 90%; */
     /* box-sizing: border-box;
-    width: 90%;
+    
     max-width: 1100px;
     height: auto; */
 }
@@ -126,7 +126,7 @@ body{
     height: 100%;
 }
 
-.popup-content-quiz .container{
+.container-quiz{
     border-top: 3px solid #ABABAB;
     margin-top: 10px;
     width: 100%;
@@ -136,12 +136,12 @@ body{
     gap: 0;
 }
 
-.popup-content-quiz .section2{
+.section2-quiz{
     border-left: 3px solid #ABABAB;
     border-right: 3px solid #ABABAB;
 }
 
-.popup-content-quiz .select-course{
+.select-course{
     font-style: normal;
     font-weight: 600;
     font-size: 35px;
@@ -150,7 +150,7 @@ body{
     margin-top: 15px;
 }
 
-.popup-content-quiz .section1{
+.section1-quiz{
     width: 425px;
     height: 100%;
     display: flex;
@@ -158,7 +158,7 @@ body{
     align-items: center;
 }
 
-.popup-content-quiz .menu-item{
+.select-item .menu-item{
     font-style: normal;
     font-weight: 200;
     font-size: 15px;
@@ -166,7 +166,7 @@ body{
     color: #000000;
 }
 
-.popup-content-quiz .select-item{
+.select-item{
     width: 54%;
     display: flex;
     flex-flow: row wrap;
@@ -175,7 +175,7 @@ body{
     margin-top: 10px;
 }
 
-.popup-content-quiz .section2{
+.section2-quiz{
     width: 290px;
     height: 100%;
     display: flex;
@@ -183,7 +183,7 @@ body{
     align-content: center;
 }
 
-.popup-content-quiz .section2 > span{
+.section2-quiz > span{
     margin: 0 10px;
     margin-top: 15px;
 }
@@ -202,7 +202,7 @@ body{
     cursor: pointer;
 }
 
-.popup-content-quiz .section3{
+.section3-quiz{
     width: 534px;
     height: 100%;
     display: flex;
@@ -216,7 +216,7 @@ body{
     margin-top: 15px;
 }
 
-.btn{
+.btn-quiz{
     width: 450px;
     height: 85.37px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -224,7 +224,7 @@ body{
     cursor: pointer;
 }
 
-.popup-content-quiz .create{
+.create-quiz{
     background-color: #F29723;
     font-style: normal;
     font-weight: 600;
@@ -238,7 +238,7 @@ body{
     border: 0;
 }
 
-.popup-content-quiz .cancel{
+.cancel-quiz{
     background-color: #FFFFFF;
     border: 3px solid #00A1E9;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -254,14 +254,14 @@ body{
 }
 
 
-.popup-content-quiz .question-type{
+.question-type{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
 }
 
-.popup-content-quiz .question-type > span{
+.question-type > span{
     width: 133px;
 }
 
