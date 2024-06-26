@@ -120,10 +120,11 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            const courseList = document.getElementById('course-list');
+    
             fetch('/api/courses')
                 .then(response => response.json())
                 .then(data => {
-                    const courseList = document.getElementById('course-list');
                     data.forEach(course => {
                         const courseCard = document.createElement('div');
                         courseCard.className = 'course-card';
@@ -150,12 +151,17 @@
                                 </div>
                             </div>
                         `;
+                        
+                        courseCard.addEventListener('click', () => {
+                            window.location.href = '/courseDetail';
+                        });
+    
                         courseList.appendChild(courseCard);
                     });
                 })
                 .catch(error => console.error('Error fetching courses:', error));
-        });               
-    </script>
+        });
+    </script>    
 
 <script src="../scripts/script.js"></script>
 </body>

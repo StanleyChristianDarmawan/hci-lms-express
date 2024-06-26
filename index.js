@@ -65,6 +65,9 @@ app.get('/attendance', (req, res) => {
 app.get('/courses', (req, res) => {
   res.sendFile(path.join(__dirname, 'views/courses.html'));
 });
+app.get('/courseDetail', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views/courseDetail.html'));
+});
 app.get('/information', (req, res) => {
   res.sendFile(path.join(__dirname, 'views/information.html'));
 });

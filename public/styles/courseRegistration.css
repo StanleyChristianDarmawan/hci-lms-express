@@ -15,6 +15,7 @@
     /* max-width: calc(33.333% - 40px); */
     transition: transform 0.2s;
     font-family: "Inter", sans-serif;
+    cursor: pointer;
 }
 
 
